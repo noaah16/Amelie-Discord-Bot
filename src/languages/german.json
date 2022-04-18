@@ -1,0 +1,936 @@
+{
+	"events": {
+		"vote": {
+			"not_voted": {
+				"title": "Vote für Amelie auf Top.gg",
+				"color": "#9b4a51",
+				"description": "Einige Befehle von Amelie können nur verwendet werden, wenn du für Amelie votest.\nEs steckt viel Arbeit in Amelie, unterstütze uns mit deinem Vote :)",
+				"image": "https://cdn.discordapp.com/attachments/918149549455970344/923151567274803240/Lenas.png",
+				"vote": "VOTEN"
+			}
+		},
+		"invalid_usage": {
+			"data": {
+				"embeds": [
+					{
+						"title": "<:newerror:926976473456320512> Ungültige Verwendung",
+						"description": "**Richtige Verwendung**\n> {usage}",
+						"color": "9b2525"
+					}
+				]
+			}
+		},
+		"cooldown": {
+			"content": "Jooooooo, entspann dich! Du bist sooo schnell, bitte warte eine Sekunde :)"
+		},
+		"no_permissions": {
+			"data": {
+				"embeds": [
+					{
+						"title": "<:newerror:926976473456320512> Nicht genehmigt!",
+						"description": "> Sie sind nicht berechtigt, diesen Befehl auszuführen.",
+						"color": "9b2525"
+					}
+				]
+			}
+		},
+		"cmd_notfound": {
+			"data": {
+				"embeds": [
+					{
+						"title": "<:newerror:926976473456320512> Befehl nicht gefunden",
+						"description": "> Der Befehl `a!{command}` wurde nicht gefunden",
+						"color": "9b2525"
+					}
+				]
+			}
+		},
+		"global_deactivated": {
+			"data": {
+				"embeds": [
+					{
+						"title": "Amelie ist derzeit vollständig deaktiviert",
+						"description": "Amelie befindet sich derzeit in der Endphase der Entwicklung und wir arbeiten daran, APIs, das Sprachsystem und das Caching voll funktionsfähig zu machen.\n\nAuch werden derzeit Anfragen für einige privilegierte Gateway-Intents gestellt, um Amelie voll funktionsfähig zu machen. Es braucht Zeit, aber wir werden bald so weit sein <3",
+						"color": "2f3136"
+					}
+				]
+			}
+		}
+	},
+	"management": {
+		"announce": {
+			"success_send": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Die Nachricht wurde gesendet",
+							"description": "> Ihre Nachricht wurde erfolgreich an den Kanal gesendet {channel}",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"sending_failed": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Senden fehlgeschlagen",
+							"description": "> Das Senden ist möglicherweise fehlgeschlagen, weil keine Berechtigung für den angegebenen Kanal besteht.",
+							"color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"config": {
+			"embed": {
+				"title": "Übersicht der Konfigurationen",
+				"description_language": "Sprache:",
+				"description_disablecommands": "Deaktivierte Befehle:"
+			},
+			"settings_not_found": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Einstellungen nicht gefunden",
+							"description": "> Es sind keine Einstellungen vorgenommen worden",
+							"color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"ban": {
+			"success_ban": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Mitglied wurde gebannt",
+							"description": "> Das Mitglied <@{member}> (||{member}||) wurde erfolgreich von <@{author}> gebannt\n\n**Informationen**\n> **Grund:** {reason}\n> **Dauer:** `{duration}`",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"member_selfban": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Sie können sich nicht selbst bannen",
+							"description": "> Es wäre verrückt, wenn Sie das könnten, aber nein, Sie können sich nicht selbst bannen.",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"not_bannable": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Nicht bannbar",
+							"description": "> Das Mitglied {member} ist nicht bannbar",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"isbanned": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Bereits gebannt",
+							"description": "> Das Mitglied {member} ist bereits gebannt",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"isnotbanned": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Nicht gebannt",
+							"description": "> Das Mitglied {member} ist nicht gebannt",
+							"color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"botinfo": {
+			"only_send": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "Amelie <3",
+						  "description": "**Status**\n> {status_icon} | {status_text}\n\n**Information**\n> **Uptime:** {uptime}\n> **Version:** {version}\n> **Guilds:** {guilds}\n> **Members:** {members}\n\n**Links**\n> **Website:** https://ameliebot.com/\n> **Status:** https://status.ameliebot.com/",
+						  "color": 10177105,
+						  "thumbnail": {
+							"url": "https://media.discordapp.net/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					  ]
+				}
+			}
+		},
+		"ccmd": {
+			"success_create": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Befehl wurde erstellt",
+							"description": "> Der Befehl `{command}` wurde erfolgreich erstellt",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"overwritten": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Kann nicht überschrieben werden",
+							"description": "> Dieser Befehl ist bereits im System vorhanden und kann nicht überschrieben werden.",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"already_exist": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Bereits vorhanden",
+							"description": "> Dieser Befehl existiert bereits",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"not_exist": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Der Befehl existiert nicht",
+							"description": "> Dieser Befehl existiert nicht",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"list_empty": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Keine Befehle gefunden",
+							"description": "> Es wurden keine Befehle gefunden",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"success_deleted": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Befehl gelöscht",
+							"description": "> Der Befehl `{command}` wurde erfolgreich gelöscht",
+							"color": "238351"
+						}
+					]
+				}
+			}
+		},
+		"usability": {
+			"disable": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Befehl wurde deaktiviert",
+							"description": "> Der Befehl `{command}` wurde erfolgreich **deaktiviert**",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"enable": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Befehl wurde aktiviert",
+							"description": "> Der Befehl `{command}` wurde erfolgreich **aktiviert**",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"already_disabled": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Kann nicht aktiviert werden",
+							"description": "> Der Befehl `{command}` ist bereits **aktiviert**",
+							"color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"guildinfo": {
+			"only_send": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "Informationen zur Gilde",
+						  "description": "**Information**\n> **Guild Name:** {guild_name}\n> **Guild ID** `{guild_id}`\n> **Created:** {created}\n\n**Statistics**\n> **Members:** `{members}`\n> **Boosts:** `{boosts}`\n\n> **Channels:** `{channels}`\n> **Emojis & Stickers:** `{emojis}`",
+						  "color": 10177105,
+						  "thumbnail": {
+							"url": "{icon}"
+						  }
+						}
+					]
+				}
+			}
+		},
+		"joinroles": {
+			"added": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Rollen hinzugefügt",
+							"description": "> Die angegebenen Rollen wurden erfolgreich hinzugefügt",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"removed": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Rollen entfernt",
+							"description": "> Die angegebenen Rollen wurden erfolgreich entfernt",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"not_found": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Rollen nicht gefunden",
+						  "description": "> Es wurden keine Rollen gefunden, die zugewiesen werden sollen.",
+						  "color": "9b2525"
+						}
+					]
+				}
+			},
+			"cannot_assign": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Rolle kann nicht hinzufügen",
+						  "description": "> {role} konnte nicht hinzugefügt werden. _(Wenn Sie zusätzliche Rollen angegeben haben, denen die Rollen zugewiesen werden können, wurden sie hinzugefügt)_",
+						  "color": "9b2525"
+						}
+					]
+				}
+			},
+			"list": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "Liste aller Join-Rollen",
+						  "description": "{roles}",
+						  "color": 10177105
+						}
+					]
+				}
+			}
+		},
+		"kick": {
+			"kicked": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Erfolgreich gekickt",
+							"description": "> Das Mitglied <@{member}> wurde erfolgreich gekickt von <@{author}>\n\n**Informationen**\n> **Grund:** {reason}",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"member_not_specified": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Mitglied nicht angegeben",
+							"description": "> Es wurde kein Mitglied angegeben, also konnte auch niemand rausgeschmissen werden.",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"member_not_kickable": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Kann nicht gekickt werden",
+							"description": "> Dieses Mitglied konnte wegen seines hohen Ranges nicht rausgeworfen werden",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"member_selfkick": {
+				"data": {
+					"embeds": [
+						{
+							"title": "ha, ha, ha. Lustig :)",
+							"color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"language": {
+			"success_lang_change": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Sprache geändert",
+							"description": "> Ihre Sprache wurde nun zu {lang} geändert",
+							"color": "238351"
+						}
+					]
+				}
+			}
+		},
+		"logging": {
+			"added": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Logs hinzugefügt",
+							"description": "> Die angegebenen Protokolle wurden erfolgreich zu {channel} hinzugefügt.",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"removed": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Protokolle entfernt",
+							"description": "> Die angegebenen Protokolle wurden erfolgreich entfernt",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"notfound": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> Protokoll nicht gefunden",
+							"description": "> Das angegebene Protokoll existiert nicht in Amelie",
+							"color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"permissions": {
+			"assigned": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newsuccess:926972978888048711> Berechtigung zugewiesen",
+						  "description": "> Die Berechtigung `{perms}` wurde der {Rolle} zugewiesen",
+						  "color": 2327377
+						}
+					]
+				}
+			},
+			"removed": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newsuccess:926972978888048711> Berechtigungen entfernt",
+						  "description": "> Die Berechtigung `{perms}` wurde von {role} entfernt",
+						  "color": 2327377
+						}
+					]
+				}
+			},
+			"already_exist": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Erlaubnis bereits vorhanden",
+						  "description": "> Die Berechtigung `{perms}` wurde bereits der {Rolle} zugewiesen",
+						  "color": "9b2525"
+						}
+					]
+				}
+			},
+			"not_exist": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Erlaubnis nicht vorhanden",
+						  "description": "> Die Berechtigung `{perms}` wurde noch keiner Rolle zugewiesen",
+						  "color": "9b2525"
+						}
+					]
+				}
+			},
+			"list": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "Liste aller Berechtigungen von {permslist}",
+						  "description": "> Hier werden alle Rollen aufgelistet, die Berechtigungen auf `{perms}` haben\n\n> {role}",
+						  "color": 10177105
+						}
+					]
+				}
+			},
+			"permission_notfound": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Erlaubnis nicht gefunden",
+						  "description": "> Die Berechtigung `{perms}` wurde nicht gefunden",
+						  "color": "9b2525"
+						}
+					]
+				}
+			},
+			"list_not_specified": {
+				"data": {
+					"embeds": [
+						{
+							"title": "List of permissions",
+							"description": "> Diese Berechtigungen können einer gewünschten Rolle zugewiesen werden, jeder mit dieser Rolle hat dann Rechte auf die ausgewählten Funktionen.\n\n> Wenn Sie einen Manager hinzufügen wollen, der Rechte auf alle Funktionen hat, schreiben Sie: \n> `a!perms add manager <role>`\n\n> Wenn Sie wissen wollen, welche Rolle welche Rechte hat, machen Sie einfach \n> `a!perms list <permission>`, um alle Rollen zu sehen, die Rechte auf das spezifische Recht haben\n\n**Alle Berechtigungen**\n> `announce`, `ban`, `unban`, `kick`, `config`, `customcommands`, `joinroles`, `logging`, `permissions`, `purge`, `reactionroles`, `webhook`, `welcomemessage`, `say`",
+							"color": 10177105
+						}
+					]
+				}
+			}
+		},
+		"purge": {
+			"purged": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Chat geleert",
+							"description": "> `{int}` Nachrichten wurden erfolgreich gelöscht",
+							"color": "238351"
+						}
+					]
+				}
+			},
+			"over100": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Maximum ist 99",
+						  "description": "> Sie können maximal 99 Nachrichten löschen.",
+						  "color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"reactionroles": {
+			"created": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newsuccess:926972978888048711> Reaction role created",
+						  "description": "> Reaktionsrolle wurde erfolgreich mit der ID `{reactionId}` erstellt",
+						  "color": 2327377
+						}
+					]
+				}
+			},
+			"removed": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newsuccess:926972978888048711> Reaction role removed",
+						  "description": "> Reaktionsrolle mit der ID `{reactionId}` wurde erfolgreich entfernt",
+						  "color": 2327377
+						}
+					]
+				}
+			},
+			"role_not_found": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Rolle nicht gefunden",
+						  "description": "> Die angegebene Rolle existiert nicht auf Ihrem Server",
+						  "color": "9b2525"
+						}
+					]
+				}
+			},
+			"reaction_not_found": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Reaktionen nicht gefunden",
+						  "description": "> Es wurden keine Reaktionsrollen gefunden",
+						  "color": "9b2525"
+						}
+					]
+				}
+			},
+			"emoji_not_found": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Emoji wurde nicht gefunden",
+						  "description": "> Das Emoji wurde auf Ihrem Server nicht gefunden.",
+						  "color": "9b2525"
+						}
+					]
+				}
+			},
+			"cannot_react": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Kann nicht reagieren",
+						  "description": "> Die Reaktion konnte nicht hinzugefügt werden",
+						  "color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"unban": {
+			"unbanned": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Mitglied wurde aus dem entbannt",
+							"description": "> Das Mitglied {member} wurde von <@{author}> erfolgreich entbannt",
+							"color": "238351"
+						}
+					]
+				}
+			}
+		},
+		"userinfo": {
+			"success_ban": {
+				"data": {
+					"embeds": [
+						{
+							"title": "",
+							"description": "",
+							"color": ""
+						}
+					]
+				}
+			}
+		},
+		"webhook": {
+			"created": {
+				"data": {
+					"embeds": [
+						{
+							"title": "",
+							"description": "",
+							"color": ""
+						}
+					]
+				}
+			},
+			"removed": {
+				"data": {
+					"embeds": [
+						{
+							"title": "YouTube-Webhook wurde entfernt",
+							"description": "Der YouTube-Webhook mit der Kanal-ID `{id}` wurde gelöscht",
+							"color": 2327377
+						}
+					]
+				}
+			},
+			"yt_webhook_not_found": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newerror:926976473456320512> YouTube-Kanal-ID nicht gefunden",
+							"description": "> Die Kanal-ID {channelId} wurde nicht gefunden",
+							"color": "9b2525"
+						}
+					]
+				}
+			},
+			"webhook_list": {
+				"data": {
+					"embeds": [
+						{
+							"title": "Liste aller Webhooks",
+							"description": "**YOUTUBE**\n{youtube}",
+							"color": "#9b4a51"
+						}
+					]
+				}
+			},
+			"already_exist": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "<:newerror:926976473456320512> Already exist",
+						  "description": "> This URL is already used in a YouTube webhook.",
+						  "color": "9b2525"
+						}
+					]
+				}
+			}
+		},
+		"welcmsg": {
+			"created": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Willkommensnachricht erstellt",
+							"description": "> Ihre Willkommensnachricht wurde erfolgreich erstellt",
+							"color": 2327377
+						}
+					]
+				}
+			},
+			"removed": {
+				"data": {
+					"embeds": [
+						{
+							"title": "<:newsuccess:926972978888048711> Willkommensnachricht entfernt",
+							"description": "> Ihre Willkommensnachricht wurde erfolgreich entfernt",
+							"color": 2327377
+						}
+					]
+				}
+			}
+		}
+	},
+	"fun": {},
+	"others": {
+		"help": {
+			"success_command": {
+				"data": {
+					"embeds": [
+						{
+							"title": "🧭 Übersicht",
+							"description": "Mein Name ist Amelie\nWenn du Hilfe bei Funktionen brauchst, benutze `a!help <Befehl>`\n\n✨ **Management**\n> `a!announce`, `a!customcmd`, `a!joinroles`, `a!reactionroles`, `a!webhook`, `a!welcomemsg`, `a!ban`, `a!unban`, `a!kick`, `a!config`, `a!purge`, `a!permissions`, `a!log`, `a!botinfo`, `a!disable`, `a!enable`, `a!guildinfo`, `a!language` & `a!userinfo`  \n\n🎉 **Fun & Games**\n> `a!slap`, `a!happy`, `a!cats`, `a!dogs`, `a!chameleon`, `a!meme`, `a!wallpaper`, `a!cry`, `a!kiss`, `a!hug`, `a!gm`, `a!gn`, `a!say`, `a!avatar`, `a!dance`, `a!food`  & `a!tictactoe`\n\n<:gold:959720161903009803> **Lyra Game** (global game)\n> `a!lyra`, `a!collect`, `a!inventory`, `a!use`, `a!sell`\n\n🎊 **Others**\n> `a!donates`, `a!help`, `a!invite`, `a!support`, `a!report`, `a!riko`",
+							"color": 10177105,
+							"image": {
+							  "url": "https://media.discordapp.net/attachments/949304461065592886/949676799833559041/wallpaper2.png"
+							}
+						}
+					]
+				}
+			}, 
+			"announce": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for announce",
+						  "description": "**Usage**\nHow do I send an embed message?:\n> `a!announce embed <#channel> [arg=\"\"] [arg2=\"\"]... <message>`\n> **Args:** `title=\"\"`, `color=\"\"`, `image=\"\"`, `thumbnail=\"\"` & `footer=\"\"`\n\nHow do I send a normal message?\n> `a!announce normal <#channel> <message>`\n\n**Information**\n> With this feature you can send messages and embeds to custom channels\n> **Aliases:** `a!sendmessage`, `a!send`, `a!message`\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"customcmd": {
+				"data": {
+					"embeds": [
+						{ 
+						  "title": "🧭 Übersicht | help for custom commands",
+						  "description": "**Usage**\nHow do I create a command?:\n> `a!ccmd add <command> <message>`\n\nHow do I delete a command?:\n> `a!ccmd remove <command>`\n\nHow do I list all my commands?:\n> `a!ccmd list`\n\n**Information**\n> With this function you can create custom commands.\n> **Aliases:** `a!ccmd` & `a!customcommand`\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"joinroles": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for joinroles",
+						  "description": "**Usage**\nHow do I add a role?:\n> `a!jr add <@role>`\n\nHow do I remove a role?:\n> `a!jr remove <@role>`\n\nHow do I list all my roles?:\n> `a!jr list`\n\n**Information**\n> With this function, you can add roles that will be automatically assigned to new users on your server\n> **Aliases:** `a!roles` & `a!jr`\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"reactionroles": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for reactionroles",
+						  "description": "**Usage**\nHow do I add a reaction?:\n> `a!rr add <#channel> <messageId> <@role> <emoji>`\n\nHow do I remove a reaction?:\n> `a!rr remove <reactionId>` - use `a!rr list` to get the <reactionId>\n\nHow do I list all my reactions?:\n> `a!rr list`\n\n**Information**\n> With this function you can create reaction roles, respond to them and receive a role\n> **Aliases:** `a!rr`\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"webhook": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for webhook",
+						  "description": "**Usage**\nHow do I create a YouTube webhook?:\n> `a!webhook add youtube <#channel> <CHANNEL ID>`\n> The channel ID looks like this: `UC6Gc4KQ1ueDnh8x7plaAD3w`\n\nHow do I remove a YouTube webhook?:\n> `a!webhook remove youtube <#channel> <CHANNEL ID>`\n\nHow do I list all my webhooks?:\n> `a!webhook list`\n\n**Information**\n> With this function, you can create YouTube webhooks, so you will be notified as soon as a new video appears on the specified youtube channel.\n> **Aliases:** `a!hook` & `a!wb`\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					  ]
+				}
+			},
+			"welcmsg": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for welcome message",
+						  "description": "**Usage**\nHow do I create a welcome message?:\n> `a!welcmsg add <message>`\n\nHow do I delete a welcome message?:\n> `a!welcmsg remove`\n\n**Information**\n> With this feature you can create welcome messages that users will receive via direct message when they join your server.\n> **Aliases:** `a!hook` & `a!wb`\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					  ]
+				}
+			},
+			"ban_kick_unban": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Overview | help for ban, unban & kick",
+						  "description": "**Usage**\nHow do I ban a user?:\n> `a!ban <@member> [reason]`\n\nHow do I unban a user?:\n> `a!unban <userId>`\n\nHow do I kick a user?:\n> `a!kick <@member> [reason]`\n\n**Information**\n> With these functions, you can ban & kick users from your server easily and quickly\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"permissions": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for permissions",
+						  "description": "**Usage**\nHow do I assign permissions?:\n> `a!perms add <permission> <@role>`\n\nHow do I remove permissions?:\n> `a!perms remove <permission> <@role>`\n\nHow do I list all granted permissions?:\n> `a!perms list`\n\n**Information**\n> With this function, you can grant user permissions to certain functions of Amelie _(roles with `ADMINISTRATOR` permissions always have access to Amelie)_\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"log": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Overview | help for logging",
+						  "description": "**Usage**\nHow do I create logs?:\n> `a!log set <#channel> <all|[log]> <#channel>`\n\nHow do I remove logs?:\n> `a!log remove <#channel> <all|[log]>`\n\nHow do I list current logs?:\n> `a!log list`\n\n**Information**\n> With this function you can log what is happening on your server.\n> **Aliases:** `a!logging`\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"disable_enable": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for disable & enable",
+						  "description": "**Usage**\nHow do I disable a command?:\n> `a!disable <command>`\n\nHow do I enable a command?:\n> `a!enable <command>`\n\n**Information**\n> With this function, you can disable and enable commands from Amelie.\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"language": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for language",
+						  "description": "**Usage**\nHow do I change the language?:\n> `a!language <lang>`\n\n**Available languages:** `English`, `German`, `Japanese` & `Hungary`\n\n**Information**\n> With this function, you can change the language of Amelie.\n> **Aliases:** `a!lang`\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			},
+			"report": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "🧭 Übersicht | help for report",
+						  "description": "**Usage**\nHow do I report a bug or user?:\n> `/report <user|bug>`\n\n-> This function uses only the slash command prefix `(/)` !!\n\n**Information**\n> With this function, you can report a bug or spelling mistake\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "color": 10177105,
+						  "footer": {
+							"text": "I am Amelie, I am here for you <3",
+							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
+						  }
+						}
+					]
+				}
+			}
+		},
+		"report": {
+			"cant_use": {
+				"data": {
+					"embeds": [
+						{
+						  "title": "Nur Interaktion verfügbar",
+						  "description": "> Der Befehl `REPORT` ist nur als Interaktion verfügbar.",
+						  "color": 10177105
+						}
+					  ]
+				}
+			}
+		}
+	}
+}
