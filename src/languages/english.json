@@ -821,7 +821,7 @@
 							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
 						  }
 						}
-					  ]
+					]
 				}
 			},
 			"welcmsg": {
@@ -836,7 +836,7 @@
 							"icon_url": "https://cdn.discordapp.com/attachments/948222311692115979/950567363386937344/profilepicture-discord.jpg"
 						  }
 						}
-					  ]
+					]
 				}
 			},
 			"ban_kick_unban": {
@@ -919,7 +919,7 @@
 					"embeds": [
 						{
 						  "title": "🧭 Overview | help for report",
-						  "description": "**Usage**\nHow do I report a bug or user?:\n> `/report <user|bug>`\n\n-> This function uses only the slash command prefix `(/)` !!\n\n**Information**\n> With this function, you can report a bug or spelling mistake\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
+						  "description": "**Usage**\nHow do I report a bug or user?:\n> `/report`\n\n-> This function uses only the slash command prefix `(/)` !!\n\n**Information**\n> With this function, you can report a bug or spelling mistake\n\nIf you need further help, you are welcome to join our [support server](https://ameliebot.com/dc/)",
 						  "color": 10177105,
 						  "footer": {
 							"text": "I am Amelie, I am here for you <3",

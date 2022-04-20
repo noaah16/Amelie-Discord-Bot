@@ -16,7 +16,5 @@ module.exports = {
 
     async execute(message, args, client, moment, permissions) {
 
-        amelie.image("kiss")
-
     }
 };

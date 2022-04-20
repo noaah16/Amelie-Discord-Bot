@@ -15,7 +15,7 @@ module.exports = {
         if(!args[0]) {
             const msg = replacePlaceholders( message.guildId, "others", "help", "success_command").data;
             return message.channel.send(msg);
-        } else if(args[0].includes("a!")) return message.channel.send({content: "Bitte gebe für weitere Hilfe den command ohne dem Prefix an"})
+        } else if(args[0].includes("a!")) return message.channel.send({content: "Please specify the command without the prefix for further help"})
 
         if (["announce", "sendmessage"].includes(args[0].toLowerCase())) {
             const msg = replacePlaceholders( message.guildId, "others", "help", "announce").data;

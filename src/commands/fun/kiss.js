@@ -1,6 +1,6 @@
 const { Client, Attachment, Message, MessageEmbed } = require("discord.js");
 const { replacePlaceholders } = require("../../structures/language");
-const fetch = require('node-fetch');
+const amelie = require("amelies-images")
 const topgg = require("../../index");
 
 const global_suitable = true;
@@ -27,17 +27,12 @@ module.exports = {
                     .setColor('#ff4d4d')
                 return message.channel.send({ embeds: [embed] })
             } else {
-                let url = `https://developers.ameliebot.com/api/image-api/kiss/`;
-                let settings = { method: "Get" };
-
-                fetch(url, settings).then(res => res.json()).then((json) => {
+                amelie.image("kiss").then(e => {
                     const embed = new MessageEmbed()
-                        .setImage(json.url)
+                        .setImage(e)
                         .setColor("9b4a51")
                         .setAuthor({ name: `${message.author.tag}`, iconURL: `${message.author.displayAvatarURL({ dynamic: true })}` })
                     message.channel.send({ embeds: [embed] })
-                }).catch(err => {
-                    message.channel.send({ content: "The Amelie Image-API is currently not available" })
                 })
             }
         });
